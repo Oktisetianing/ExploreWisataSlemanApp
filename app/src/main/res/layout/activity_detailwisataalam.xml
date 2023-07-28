@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailwisatacandiActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/maincard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="12dp"
+        android:layout_margin="12dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp">
+
+            <ImageView
+                android:id="@+id/gambar"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:src="@drawable/candiprambanan"/>
+
+            <TextView
+                android:id="@+id/tvnamawisata"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nama Wisata"
+                android:layout_below="@id/gambar"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="@color/hijaubgt"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:id="@+id/tvjambuka"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Jam Buka"
+                android:layout_below="@id/tvalamat"
+                android:textColor="@color/black"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/tvalamat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Alamat"
+                android:layout_below="@id/tvnamawisata"
+                android:textColor="@color/black"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/tvdeskripsi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Deskripsi"
+                android:layout_below="@id/tvjambuka"
+                android:textColor="@color/black"
+                android:textSize="15sp"/>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

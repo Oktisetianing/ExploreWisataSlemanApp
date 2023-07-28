@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PaketWisataActivity">
+
+    <RelativeLayout
+        android:id="@+id/pktwst1"
+        android:layout_width="200dp"
+        android:layout_height="290dp"
+        android:layout_margin="20dp"
+        android:background="@color/hijaumudasekali">
+
+        <ImageView
+            android:id="@+id/candipram"
+            android:layout_width="210dp"
+            android:layout_height="135dp"
+            android:layout_alignParentEnd="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/candiprambanan" />
+
+        <TextView
+            android:id="@+id/tvpkt1"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_below="@id/candipram"
+            android:text="Paket Wisata Candi 1 Hari ( 1D Tour )"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/tvdestinasi1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/tvpkt1"
+            android:text="Destinasi : \n1.Candi Prambanan \n2.Candi Boko..."
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/tvharga1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/tvdestinasi1"
+            android:text="350.000"
+            android:textSize="17sp"
+            android:textColor="@color/hijaubgt"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+
+</LinearLayout>

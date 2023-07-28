@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    tools:context=".BerandaActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/hello"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvHello"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:text="Hello,.... \nSelamat Datang di ExploreWisataSleman"/>
+
+                <ImageView
+                    android:id="@+id/gmbrnotifikasi"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_toRightOf="@id/tvHello"
+                    android:src="@drawable/baseline_notifications_24"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="50dp"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/gmbrprofile"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_toRightOf="@id/gmbrnotifikasi"
+                    android:src="@drawable/cipung"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"/>
+
+            </RelativeLayout>
+
+            <HorizontalScrollView
+                android:id="@+id/iklan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_below="@+id/hello">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <ImageView
+                        android:id="@+id/gmbr_pktwisatacandi"
+                        android:layout_width="200dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/paketwisatacandi"/>
+
+                    <ImageView
+                        android:id="@+id/gmbr_pktwisatacangkringan"
+                        android:layout_width="200dp"
+                        android:layout_height="150dp"
+                        android:layout_toRightOf="@id/gmbr_pktwisatacandi"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/paketwisatacangkringan"/>
+
+                    <ImageView
+                        android:id="@+id/gmbr_pktwisatakaliurang"
+                        android:layout_width="200dp"
+                        android:layout_height="150dp"
+                        android:layout_toRightOf="@id/gmbr_pktwisatacangkringan"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/paketwisatakaliurang"/>
+                </RelativeLayout>
+            </HorizontalScrollView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                app:cardCornerRadius="15dp"
+                android:layout_below="@id/iklan">
+
+                <RelativeLayout
+                    android:layout_width="180dp"
+                    android:layout_height="250dp"
+                    android:background="@color/hijaumudasekali">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/gmbr1"
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:src="@drawable/paketwisatacandi"/>
+
+                    <Button
+                        android:id="@+id/button1"
+                        android:layout_width="150dp"
+                        android:layout_height="60dp"
+                        android:layout_below="@+id/gmbr1"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginLeft="18dp"
+                        android:text="Paket Wisata"
+                        app:backgroundTint="@color/hijaubgt" />
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="10dp"
+                app:cardCornerRadius="15dp"
+                android:layout_toRightOf="@id/cardview1"
+                android:layout_below="@id/iklan">
+
+                <RelativeLayout
+                    android:layout_width="180dp"
+                    android:layout_height="250dp"
+                    android:background="@color/hijaumudasekali">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/gmbr2"
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:src="@drawable/wisatacandiratuboko"/>
+
+                    <Button
+                        android:id="@+id/button2"
+                        android:layout_width="150dp"
+                        android:layout_height="60dp"
+                        android:layout_below="@+id/gmbr2"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginLeft="18dp"
+                        android:text="Wisata Candi"
+                        app:backgroundTint="@color/hijaubgt" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                app:cardCornerRadius="15dp"
+                android:layout_below="@id/cardview1">
+
+                <RelativeLayout
+                    android:layout_width="180dp"
+                    android:layout_height="250dp"
+                    android:background="@color/hijaumudasekali">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/gmbr3"
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:src="@drawable/bukitklangon"/>
+
+                    <Button
+                        android:id="@+id/button3"
+                        android:layout_width="150dp"
+                        android:layout_height="60dp"
+                        android:layout_below="@+id/gmbr3"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginLeft="18dp"
+                        android:text="Wisata Alam"
+                        app:backgroundTint="@color/hijaubgt" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="10dp"
+                app:cardCornerRadius="15dp"
+                android:layout_toRightOf="@id/cardview3"
+                android:layout_below="@id/cardview2">
+
+                <RelativeLayout
+                    android:layout_width="180dp"
+                    android:layout_height="250dp"
+                    android:background="@color/hijaumudasekali">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/gmbr4"
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:src="@drawable/bhumimerapi"/>
+
+                    <Button
+                        android:id="@+id/button4"
+                        android:layout_width="150dp"
+                        android:layout_height="60dp"
+                        android:layout_below="@+id/gmbr4"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginLeft="18dp"
+                        android:text="Wisata Lainnya"
+                        app:backgroundTint="@color/hijaubgt" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>
